@@ -8,7 +8,7 @@
   filter: brightness(87%);
 }
 :root{
-  --rojo:#e5332a;
+  --rojo:#e5332ab7;
   --naranja:#f6a51a;
   --amarillo:#f3e51c;
   --verde:#7cb72e;
@@ -40,8 +40,8 @@ p{
   font-weight: 900;
 }
 .blurreado{
-  backdrop-filter: blur(15px); 
-  backdrop-filter: blur(15px); 
+  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px); 
 }
 .logo__sitio{
   width:50vw; 
@@ -75,6 +75,24 @@ p{
 }
 .bg-dark{
   background-color: #009F98!important;
+  background-image: url('../svg/Rectangulos.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.bg-darkGabros{
+  background-color: var(--morado);
+  background-image: url('../svg/Rectangulos.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.bg-darkDenisse{
+  background-color: var(--naranja);
+  background-image: url('../svg/Rectangulos.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.bg-darkMisael{
+  background-color: #999;
   background-image: url('../svg/Rectangulos.svg');
   background-repeat: no-repeat;
   background-position: right;
