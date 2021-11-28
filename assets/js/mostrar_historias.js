@@ -24,14 +24,13 @@ fetch(url, {
 .then(data => {
     
     
-    for(let i=1; i<=6;i++){
-        console.log(data.items[i-1])
+    for(let i=1; i<=data.items.length&&data.items.length<=6 ;i++){
         titulo = data.items[i-1].titulo;
         texto = cortarTexto(data.items[i-1].texto);
         categoria = data.items[i-1].categoria;
         id = data.items[i-1].id;
         let container = document.getElementById(`contenedor__historia-${i}`);
-        let tarjeta=`<div class="col-md-10"><div id="historia_${i}" class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative blurreado"><div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 etiquetaTrabajo">${categoria}</strong><h3 class="titulo__card mb-0"><a href="historia.html?id=${id}" class="text-white">${titulo}</a></h3><div class="mb-1">Nov, 2016</div><p class="card-text mb-auto"> ${texto} </p></div><div class="col-auto d-none mt-3 mr-2 d-lg-block"><div class="ih-item circle colored effect13 bottom_to_top"><a href="#"><div class="img"><img class="img" src="assets/svg/${categoria}.svg" width="180" height="230" /></div><div class="info"><div class="info-back"><h3>Selecciona la imagen</h3><p class="text-black">Para saber el chisme completo</p></div></div></a></div></div></div></div>`;
+        let tarjeta=`<div class="col-md-10"><div id="historia_${i}" class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative blurreado"><div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 etiquetaTrabajo">${categoria}</strong><h3 class="titulo__card mb-0"><a href="historia.html?id=${id}" class="text-white">${titulo}</a></h3><div class="mb-1">Nov, 2016</div><p class="card-text mb-auto"> ${texto} </p></div><div class="col-auto d-none mt-3 mr-2 d-lg-block"><div class="ih-item circle colored effect13 bottom_to_top"><a href="historia.html?id=${id}"><div class="img"><img class="img" src="assets/svg/${categoria}.svg" width="180" height="230" /></div><div class="info"><div class="info-back"><h3>Selecciona la imagen</h3><p class="text-black">Para saber el chisme completo</p></div></div></a></div></div></div></div>`;
         if(i%2==0){
             container.innerHTML=espacio;
             container.innerHTML+=tarjeta;

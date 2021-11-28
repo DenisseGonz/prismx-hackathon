@@ -30,13 +30,13 @@
     <!-- NAVEGACIÓN -->
     <div class="accordion my-1" id="accordionExample">
       <div class="card">
-        <div class="card-header bg-dark" id="headingOne">
+        <!--<div class="card-header bg-dark" id="headingOne">
             <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               <h2 class="bi bi-list text-dark my-0 p-0"></h2>
             </button>
-        </div>
+        </div>-->
     
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <!--<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">-->
           <div class="card-body menu-body my-0">
             <div class="list-group list-group-flush">
               <h5><a href="index.html" class="list-group-item text-center text-dark">
@@ -45,17 +45,17 @@
               <div class="list-group-item">
                 <h5 class="text-center">Historias</h5>
                 <div class="d-flex justify-content-around">
-                <a class="p-2 etiquetaTrabajo" href="#">Trabajo</a>
-                <a class="p-2 etiquetaAmor" href="#">Amor</a>
-                <a class="p-2 etiquetaFamilia" href="#">Familia</a>
-                <a class="p-2 etiquetaEscuela" href="#">Escuela</a>
-                <a class="p-2 etiquetaTransporte" href="#">Transporte</a>
+                <a class="p-2 etiquetaTrabajo" href="index.html?categoria=Trabajo">Trabajo</a>
+                <a class="p-2 etiquetaAmor" href="index.html?categoria=Amor">Amor</a>
+                <a class="p-2 etiquetaFamilia" href="index.html?categoria=Familia">Familia</a>
+                <a class="p-2 etiquetaEscuela" href="index.html?categoria=Escuela">Escuela</a>
+                <a class="p-2 etiquetaTransporte" href="index.html?categoria=Transporte">Transporte</a>
               </div>
               </div>
               <div class="list-group-item">
                 <h5 class="text-center">Investigaciones</h5>
                 <div class="d-flex justify-content-around">
-                <a class="p-2 etiquetaInvestigacion" href="#">Investigación</a>
+                <a class="p-2 etiquetaInvestigacion" href="articulo.html?id=5">Investigación</a>
                 <a class="p-2 etiquetaCientificos" href="#">Científicos</a>
               </div>
               </div>
@@ -63,23 +63,25 @@
           </div>
         </div>
       </div>
-    </div>
+    <!--</div>-->
     <!-- BANNER PRINCIPAL -->
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-      <div class="svg">
-        <img src="assets/svg/image.svg" class="icono__banner-principal" />
-      </div>
-      <div class="col-md-5 px-0 mx-0">
-        <h1 class="display-4 font-italic">
-          Me agredieron por un arete.
-        </h1>
-        <p class="lead my-3 text-justify">
-          Quizás te estés preguntando ¿quién haría eso en pleno 2021? Pues dejame contarte como fue que me agredieron en
-          el metro por vestir como me gusta.
-        </p>
-        <p class="lead mb-0">
-          <a href="historia.html" class="text-white font-weight-bold">Descubre esta historia...</a>
-        </p>
+    <div id = "principal">
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="svg">
+          <img src="assets/svg/image.svg" class="icono__banner-principal" />
+        </div>
+        <div class="col-md-5 px-0 mx-0">
+          <h1 class="display-4 font-italic">
+            Me agredieron por un arete.
+          </h1>
+          <p class="lead my-3 text-justify">
+            Quizás te estés preguntando ¿quién haría eso en pleno 2021? Pues dejame contarte como fue que me agredieron en
+            el metro por vestir como me gusta.
+          </p>
+          <p class="lead mb-0">
+            <a href="historia.html" class="text-white font-weight-bold">Descubre esta historia...</a>
+          </p>
+        </div>
       </div>
     </div>
     <!-- SECCIÓN DE HISTORIAS -->
@@ -111,9 +113,9 @@
         </div>
         <div class="col-3">
           <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-facebook link__footer" href="#"></a></button>
-          <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-tiktok link__footer" href="https://www.tiktok.com/@blogprismx?lang=es"></a></button>
-          <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-youtube link__footer" href="#"></a></button>
-          <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-github link__footer" href="https://github.com/DenisseGonz/prismx-hackathon"></a></button>
+            <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-tiktok link__footer" href="https://www.tiktok.com/@blogprismx?lang=es"></a></button>
+            <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-youtube link__footer" href="#"></a></button>
+            <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-github link__footer" href="https://github.com/DenisseGonz/prismx-hackathon"></a></button>
         </div>
       </div>
     </footer>
