@@ -1,0 +1,173 @@
+.fondo{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-image: url('https://thumbs.dreamstime.com/b/vector-abstracto-del-fondo-de-la-tecnolog%C3%ADa-blanco-y-gris-dise%C3%B1o-moderno-119560633.jpg');
+  background-size: cover;
+  filter: brightness(87%);
+}
+:root{
+  --rojo:#e5332a80;
+  --naranja:#f6a51a8f;
+  --amarillo:#f3e51c8a;
+  --verde:#7cb72e81;
+  --azul:#009F98;
+  --morado:#8e43908a;
+}
+/* TIPOGRAFIAS */
+@font-face {
+  font-family: 'Comfortaa-Regular';
+  src: url('fonts/Comfortaa-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Harabara';
+  src: url('fonts/Harabara\ Mais\ Demo.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Harabara';
+}
+p{
+  font-family: 'Comfortaa-Regular';
+}
+.titulo__card{
+  font-family: 'Comfortaa-Regular';
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.blurreado{
+  backdrop-filter: blur(15px); 
+  backdrop-filter: blur(15px); 
+}
+.logo__sitio{
+  width:30vw; 
+  height:5vh;
+}
+.bg-dark{
+  background-color: #009F98!important;
+  background-image: url('../svg/Rectangulos.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.buscador{
+  background: none;
+  width: 150px;
+}
+.etiquetaTrabajo{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--azul);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.svg{
+  float: right;
+  margin-right: 15%;
+}
+.icono__banner-principal{
+  height: 18.5em;
+  width: auto;
+  margin: none;
+}
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 3px solid #009F98;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.display-4 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #000;
+  text-align: center;
+  background-color: #009f97b4;
+  border-top: 5px solid #009f98;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
