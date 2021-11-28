@@ -8,12 +8,12 @@
   filter: brightness(87%);
 }
 :root{
-  --rojo:#e5332a80;
-  --naranja:#f6a51a8f;
-  --amarillo:#f3e51c8a;
-  --verde:#7cb72e81;
+  --rojo:#e5332a;
+  --naranja:#f6a51a;
+  --amarillo:#f3e51c;
+  --verde:#7cb72e;
   --azul:#009F98;
-  --morado:#8e43908a;
+  --morado:#8e4390;
 }
 /* TIPOGRAFIAS */
 @font-face {
@@ -51,6 +51,14 @@ p{
   width:100%; 
   height:5vh;
 }
+.menu-body{
+  background-image: url('../svg/fondo.svg');
+  background-size: cover; 
+  filter: brightness(87%);
+}
+.list-group-item{
+  background: none!important;
+}
 .link__footer{
   text-decoration: none;
   color: #000;
@@ -75,10 +83,6 @@ p{
   background-color: none!important;
   border-color: none!important;
 }
-.buscador{
-  background: none;
-  width: 150px;
-}
 .etiquetaTrabajo{
   font-family: 'Harabara';
   letter-spacing: 2px;
@@ -87,6 +91,55 @@ p{
   width: fit-content;
   padding: 3px 15px;
   border-radius: 10px;
+}
+.etiquetaAmor{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--rojo);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.etiquetaFamilia{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--naranja);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.etiquetaEscuela{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--verde);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.etiquetaTransporte{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--amarillo);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.etiquetaInvestigacion, .etiquetaCientificos{
+  font-family: 'Harabara';
+  letter-spacing: 2px;
+  background-color: var(--morado);
+  color: white;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.etiquetaTrabajo:hover, .etiquetaAmor:hover, .etiquetaFamilia:hover, .etiquetaEscuela:hover, .etiquetaTransporte:hover, .etiquetaInvestigacion:hover, .etiquetaCientificos:hover {
+  text-decoration: none;
+  color: white;
 }
 .svg{
   float: right;

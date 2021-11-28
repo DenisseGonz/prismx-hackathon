@@ -36,18 +36,41 @@
         </div>
       </header>
       <!-- NAVEGACIÓN -->
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-dark" href="#">Todo</a>
-          <a class="p-2 text-dark" href="#">Trabajo</a>
-          <a class="p-2 text-dark" href="#">Amor</a>
-          <a class="p-2 text-dark" href="#">Familia</a>
-          <a class="p-2 text-dark" href="#">Escuela</a>
-          <a class="p-2 text-dark" href="#">Transporte</a>
-          <a class="p-2 text-dark" href="#">Investigación</a>
-          <a class="p-2 text-dark" href="#">Cientificos</a>
-          <a class="p-2 text-dark" href="#">Recomendaciones</a>
-        </nav>
+    <div class="accordion my-1" id="accordionExample">
+        <div class="card">
+          <div class="card-header bg-dark" id="headingOne">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <h2 class="bi bi-list text-dark my-0 p-0"></h2>
+              </button>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body menu-body my-0">
+              <div class="list-group list-group-flush">
+                <h5><a href="index.html" class="list-group-item text-center text-dark">
+                  Todo
+                </a></h5>
+                <div class="list-group-item">
+                  <h5 class="text-center">Historias</h5>
+                  <div class="d-flex justify-content-around">
+                  <a class="p-2 etiquetaTrabajo" href="#">Trabajo</a>
+                  <a class="p-2 etiquetaAmor" href="#">Amor</a>
+                  <a class="p-2 etiquetaFamilia" href="#">Familia</a>
+                  <a class="p-2 etiquetaEscuela" href="#">Escuela</a>
+                  <a class="p-2 etiquetaTransporte" href="#">Transporte</a>
+                </div>
+                </div>
+                <div class="list-group-item">
+                  <h5 class="text-center">Investigaciones</h5>
+                  <div class="d-flex justify-content-around">
+                  <a class="p-2 etiquetaInvestigacion" href="#">Investigación</a>
+                  <a class="p-2 etiquetaCientificos" href="#">Científicos</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <main role="main" class="container my-5">
         <div class="row">
@@ -123,7 +146,7 @@
           </div>
           <div class="col-3">
             <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-facebook link__footer" href="#"></a></button>
-            <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-tiktok link__footer" href="#"></a></button>
+            <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-tiktok link__footer" href="https://www.tiktok.com/@blogprismx?lang=es"></a></button>
             <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-youtube link__footer" href="#"></a></button>
             <button class="btn rounded-circle btn-outline-dark mx-2"><a class="bi bi-github link__footer" href="https://github.com/DenisseGonz/prismx-hackathon"></a></button>
           </div>
