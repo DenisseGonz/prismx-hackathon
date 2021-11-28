@@ -3,7 +3,7 @@
   height: 100vh;
   position: fixed;
   z-index: -1;
-  background-image: url('https://thumbs.dreamstime.com/b/vector-abstracto-del-fondo-de-la-tecnolog%C3%ADa-blanco-y-gris-dise%C3%B1o-moderno-119560633.jpg');
+  background-image: url('../svg/fondo.svg');
   background-size: cover;
   filter: brightness(87%);
 }
@@ -18,13 +18,13 @@
 /* TIPOGRAFIAS */
 @font-face {
   font-family: 'Comfortaa-Regular';
-  src: url('fonts/Comfortaa-Regular.ttf');
+  src: url('../fonts/Comfortaa-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Harabara';
-  src: url('fonts/Harabara\ Mais\ Demo.otf');
+  src: url('../fonts/Harabara\ Mais\ Demo.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +44,7 @@ p{
   backdrop-filter: blur(15px); 
 }
 .logo__sitio{
-  width:30vw; 
+  width:50vw; 
   height:5vh;
 }
 .bg-dark{
@@ -52,6 +52,10 @@ p{
   background-image: url('../svg/Rectangulos.svg');
   background-repeat: no-repeat;
   background-position: right;
+}
+.btn-light{
+  background-color: none!important;
+  border-color: none!important;
 }
 .buscador{
   background: none;
