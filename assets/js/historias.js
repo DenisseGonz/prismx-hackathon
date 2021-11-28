@@ -17,7 +17,7 @@ fetch('https://gc751049a04829a-db202111272136.adb.us-phoenix-1.oraclecloudapps.c
   titulo.innerHTML = data.items[0].titulo;
   fecha.innerHTML = obtenerFecha(data.items[0].fecha);
   texto.innerHTML = data.items[0].texto;
-  resumen.innerHTML = data.items[0].resumen;
+  resumen.innerHTML = data.items[0].resumen + "<br><a href='articulo.html?id=5'>Leer más</a>";
   tiktok.innerHTML = data.items[0].tiktok;
 })
 .catch((error) => {
