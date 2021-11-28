@@ -5,6 +5,7 @@ let titulo = document.getElementById("titulo");
 let fecha = document.getElementById("fecha");
 let texto = document.getElementById("texto");
 let resumen = document.getElementById("resumen");
+let tiktok = document.getElementById("tiktok");
 
 let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
@@ -18,6 +19,7 @@ fetch('https://gc751049a04829a-db202111272136.adb.us-phoenix-1.oraclecloudapps.c
   fecha.innerHTML = obtenerFecha(data.items[0].fecha);
   texto.innerHTML = data.items[0].texto;
   resumen.innerHTML = data.items[0].resumen;
+  tiktok.innerHTML = data.items[0].tiktok;
 })
 .catch((error) => {
   console.error('Error:', error);

@@ -1,15 +1,28 @@
+let params = new URLSearchParams(location.search);
+let get_categoria = params.get('categoria')
+
 let espacio = '<div class="col-md-2"></div>';
 let titulo = '';
 let texto = '';
 let categoria = '';
 let id = '';
+let principal = document.getElementById("principal");
+let bienvenida = document.getElementById("bienvenida");
 let max_char = 290;
+let url = 'https://gc751049a04829a-db202111272136.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/prismx/historias/';
+if(get_categoria!=null){
+    url+=get_categoria;
+    principal.innerHTML = "";
+    bienvenida.innerHTML = "Estas son las historias con tematica de '"+get_categoria+"'";
+}
 
-fetch('https://gc751049a04829a-db202111272136.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/prismx/historias/', {
+
+fetch(url, {
   method: 'GET',
 })
 .then(response => response.json())
 .then(data => {
+    
     
     for(let i=1; i<=6;i++){
         console.log(data.items[i-1])

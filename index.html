@@ -30,37 +30,39 @@
     <!-- NAVEGACIÓN -->
     <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-dark" href="#">Todo</a>
-        <a class="p-2 text-dark" href="#">Trabajo</a>
-        <a class="p-2 text-dark" href="#">Amor</a>
-        <a class="p-2 text-dark" href="#">Familia</a>
-        <a class="p-2 text-dark" href="#">Escuela</a>
-        <a class="p-2 text-dark" href="#">Transporte</a>
+        <a class="p-2 text-dark" href="index.html">Todo</a>
+        <a class="p-2 text-dark" href="index.html?categoria=Trabajo">Trabajo</a>
+        <a class="p-2 text-dark" href="index.html?categoria=Amor">Amor</a>
+        <a class="p-2 text-dark" href="index.html?categoria=Familia">Familia</a>
+        <a class="p-2 text-dark" href="index.html?categoria=Escuela">Escuela</a>
+        <a class="p-2 text-dark" href="index.html?categoria=Transporte">Transporte</a>
         <a class="p-2 text-dark" href="#">Investigación</a>
         <a class="p-2 text-dark" href="#">Cientificos</a>
         <a class="p-2 text-dark" href="#">Recomendaciones</a>
       </nav>
     </div>
     <!-- BANNER PRINCIPAL -->
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-      <div class="svg">
-        <img src="assets/svg/image.svg" class="icono__banner-principal" />
-      </div>
-      <div class="col-md-5 px-0 mx-0">
-        <h1 class="display-4 font-italic">
-          Me agredieron por un arete.
-        </h1>
-        <p class="lead my-3 text-justify">
-          Quizás te estés preguntando ¿quién haría eso en pleno 2021? Pues dejame contarte como fue que me agredieron en
-          el metro por vestir como me gusta.
-        </p>
-        <p class="lead mb-0">
-          <a href="#" class="text-white font-weight-bold">Descubre esta historia...</a>
-        </p>
+    <div id="principal">
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="svg">
+          <img src="assets/svg/image.svg" class="icono__banner-principal" />
+        </div>
+        <div class="col-md-5 px-0 mx-0">
+          <h1 class="display-4 font-italic">
+            Me agredieron por un arete.
+          </h1>
+          <p class="lead my-3 text-justify">
+            Quizás te estés preguntando ¿quién haría eso en pleno 2021? Pues dejame contarte como fue que me agredieron en
+            el metro por vestir como me gusta.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white font-weight-bold">Descubre esta historia...</a>
+          </p>
+        </div>
       </div>
     </div>
     <!-- SECCIÓN DE HISTORIAS -->
-    <h1 class="display-4 font-italic text-center my-5">
+    <h1 class="display-4 font-italic text-center my-5" id="bienvenida">
       Te invitamos a ver nuestras historias e investigaciones.
     </h1>
     <div class="row mb-2" id="contenedor__historia-1"></div>
